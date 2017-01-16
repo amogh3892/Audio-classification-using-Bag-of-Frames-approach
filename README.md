@@ -13,7 +13,7 @@
     
 ## Execution     
 
-1. Place the training and the test data in a folder by numbering the categories of sound. Example if the source folder is "Data"
+1. Place the training and the test data in a folder by numbering the categories. Example, if the source folder is "Data"
   
   Data ->
             1 ->
