@@ -1,6 +1,31 @@
 
 # Audio Classification using Bag-of-Frames approach
 
+## Requirements
+
+### Python 2.7.10 
+
+### Python modules 
+
+    1.  Librosa 0.4.3
+    2.  numpy 1.11.3
+    3.  sklearn 0.18
+    
+## Execution     
+
+1. Place the training and the test data in a folder by numbering the categories of sound. Example if the source folder is "Data"
+  
+  Data ->
+            1 ->
+                test    -> "test files of category 1"
+                train   -> "train files of category 2"
+                
+            2 ->
+                test    -> "test files of category 1"
+                train   -> "train files of category 2"
+               
+            
+
 ## Project Description 
 Human speech can be broken down into elementary phonemes and can be modeled using algorithms like Hidden Markov Models (HMM). Stationary patterns like rhythm and melody can be used in classification of music. In contrast, Non speech sounds are random, unstructured, and lack the high level structures observed in speech and music, which makes it difficult to model them using HMM. In this project, the Bag of Frames approach is used to classify audio where a codebook of vectors is generated using K-Means clustering on the training data and  Bag of Frames for each of the audio clip is obtained using the codebook. These Bag of Frames are used as input to the classifiers for classification. 
 
@@ -31,3 +56,5 @@ D.	Classification
     
     
 The test phase includes similar steps where features extracted from the audio clips are normalized and vector quantized using the codebook, followed by obtaining the Bag of Frames for each audio clip.  The normalized Bag of Frames are then given as input to the classifier to obtain the final output.
+
+
