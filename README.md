@@ -17,10 +17,10 @@ Divide the audio into smaller clips of 5-20 secs each . One audio clip is conver
 
 1. Place the training and the test data in a folder by numbering the categories. Example, if the source folder is "Data"
   
-  Data -> 1 -> test -> "test audio files of category 1"
-  Data -> 1 -> train -> "train audio files of category 1"
-  Data -> 2 -> test -> "test audio files of category 2"
-  Data -> 2 -> train -> "test audio files of category 2"
+  Data -> 1 -> test -> "test audio files of category 1" <br />
+  Data -> 1 -> train -> "train audio files of category 1"<br />
+  Data -> 2 -> test -> "test audio files of category 2"<br />
+  Data -> 2 -> train -> "test audio files of category 2"<br />
   
 2. Run python train.py "window_length" "no_of_clusters"
     window_length   : Window length to divide the audio clip to 
