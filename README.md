@@ -28,6 +28,7 @@ Divide the audio into smaller clips of 5-20 secs each . One audio clip is conver
     no_of_clusters  : No of cluster centroids for k-means clustering   <br />
   
 3. Run python test.py "classifier" 
+
    classifiers : svm,nb,dt,knn,adaboost,rf<br />
    Change the parameters in the test.py file to change the parameters of the classifiers.<br />
 
