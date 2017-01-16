@@ -23,13 +23,13 @@ Divide the audio into smaller clips of 5-20 secs each . One audio clip is conver
   Data -> 2 -> train -> "test audio files of category 2"<br />
   
 2. Run python train.py "window_length" "no_of_clusters"
-    window_length   : Window length to divide the audio clip to 
-    no_of_clusters  : No of cluster centroids for k-means clustering   
+
+    window_length   : Window length to divide the audio clip to <br />
+    no_of_clusters  : No of cluster centroids for k-means clustering   <br />
   
 3. Run python test.py "classifier" 
-   classifie : svm,nb,dt,knn,adaboost,rf
-   
-   Change the parameters in the test.py file to change the parameters of the classifiers.
+   classifiers : svm,nb,dt,knn,adaboost,rf<br />
+   Change the parameters in the test.py file to change the parameters of the classifiers.<br />
 
 ## Project Description 
 Human speech can be broken down into elementary phonemes and can be modeled using algorithms like Hidden Markov Models (HMM). Stationary patterns like rhythm and melody can be used in classification of music. In contrast, Non speech sounds are random, unstructured, and lack the high level structures observed in speech and music, which makes it difficult to model them using HMM. In this project, the Bag of Frames approach is used to classify audio where a codebook of vectors is generated using K-Means clustering on the training data and  Bag of Frames for each of the audio clip is obtained using the codebook. These Bag of Frames are used as input to the classifiers for classification. 
