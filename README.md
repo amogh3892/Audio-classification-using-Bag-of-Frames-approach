@@ -11,5 +11,12 @@ A.	Feature Extraction
     
     1. For the purpose of feature extraction, the audio clip is divided into several segments by choosing a particular window length.  
     2. Then features are extracted for each of the audio segment.
-    3. Python libraries Librosa and Scikits are used to extract audio features like MFCC, delta MFCC, Linear Predictive Coding(LPC)   coefficients along with other frequency domain features like 
-    Mel Spectrogram, Spectral Centroid, Spectral Bandwidth, Spectral Roll Off   and temporal domain features like Root Mean Square Error (RMSE) and Zero Crossing Rate. 
+    3. Python libraries Librosa and Scikits are used to extract audio features like MFCC, delta MFCC, Linear Predictive Coding(LPC) coefficients along with other frequency domain features like Mel Spectrogram, Spectral Centroid, Spectral Bandwidth, Spectral Roll Off   and temporal domain features like Root Mean Square Error (RMSE) and Zero Crossing Rate. 
+    
+    
+B.	K-Means Clustering and Codebook generation
+
+    1. Once the features are extracted, the whole training and test data is divided into training and test dataset. 
+    2. Feature scaling and normalization of training data is done accross each feature.
+    3. The normalized training data is fed into K-Means clustering algorithm with the number of clusters usually much higher than the total number of classes and the cluster centroids are obtained for the normalized training set. 
+    4. These cluster centroids form the codebook. 
