@@ -22,7 +22,7 @@ Divide the audio into smaller clips of 5-20 secs each . One audio clip is conver
   Data -> 2 -> test -> "test audio files of category 2"<br />
   Data -> 2 -> train -> "test audio files of category 2"<br />
   
-2. Run python train.py "window_length" "no_of_clusters"
+2. ```javascript python train.py "window_length" "no_of_clusters" ```
 
     window_length   : Window length to divide the audio clip to <br />
     no_of_clusters  : No of cluster centroids for k-means clustering   <br />
