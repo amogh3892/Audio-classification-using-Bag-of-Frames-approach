@@ -20,3 +20,14 @@ B.	K-Means Clustering and Codebook generation
     2. Feature scaling and normalization of training data is done accross each feature.
     3. The normalized training data is fed into K-Means clustering algorithm with the number of clusters usually much higher than the total number of classes and the cluster centroids are obtained for the normalized training set. 
     4. These cluster centroids form the codebook. 
+
+C.	Bag of Frames
+    
+    1. In the next step, the feature samples from each of the audio clip are vector quantized with respect to the codebook generated and Bag of Frames is obtained from K-Means output.
+    
+D.	Classification
+
+    1. The Bag of Frames is first normalized across each audio clip and later normalized across each of the features. The resultant vectors are labelled accordingly and then used to train a supervised classifier like SVM, KNN or Random Forest.
+    
+    
+The test phase includes similar steps where features extracted from the audio clips are normalized and vector quantized using the codebook, followed by obtaining the Bag of Frames for each audio clip.  The normalized Bag of Frames are then given as input to the classifier to obtain the final output.
