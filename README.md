@@ -72,6 +72,8 @@ ESC-50 is a dataset with annotated collection of 2,000 short clips comprising 50
 
 The ESC-10 is a selection of 10 classes from the bigger dataset ESC-50. 
 
+The RF classifier outperformed other classifiers for the ESD-10 dataset with an average accuracy of 84.5% with accuracy of each folds in a 5-Fold cross validation shown below.
+
 ![alt text](https://github.com/amogh3892/Audio-classification-using-Bag-of-Frames-approach/blob/master/Result%20Images/Best_classifier_5fold_classification_results.png "5 Fold Classification results for the best classifier")
 
 
