@@ -72,6 +72,6 @@ ESC-50 is a dataset with annotated collection of 2,000 short clips comprising 50
 
 The ESC-10 is a selection of 10 classes from the bigger dataset ESC-50. 
 
-![alt text](D:/projects/EnvironmentalSoundClassification/ESC-10/Results/githubResultImages/Best_classifier_5fold_classification_results.png "5 Fold Classification results for the best classifier")
+![alt text](../"Result Images"/Best_classifier_5fold_classification_results.png "5 Fold Classification results for the best classifier")
 
 
