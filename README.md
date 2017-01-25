@@ -64,4 +64,14 @@ D.	Classification
     
 The test phase includes similar steps where features extracted from the audio clips are normalized and vector quantized using the codebook, followed by obtaining the Bag of Frames for each audio clip.  The normalized Bag of Frames are then given as input to the classifier to obtain the final output.
 
+##Results
+
+To Evaluate the approach, ESC-10 dataset available at https://github.com/karoldvl/ESC-10 was used.
+
+ESC-50 is a dataset with annotated collection of 2,000 short clips comprising 50 classes of various common sound events. Each class consists of 40 sound clips with each sound clip 5-seconds-long reconverted into a unified format (44.1 kHz, single channel, Ogg Vorbis compression at 192 kbit/s). The labeled datasets were consequently arranged into 5 uniformly sized cross-validation folds. 
+
+The ESC-10 is a selection of 10 classes from the bigger dataset ESC-50. 
+
+![alt text](D:/projects/EnvironmentalSoundClassification/ESC-10/Results/githubResultImages/Best_classifier_5fold_classification_results.png "5 Fold Classification results for the best classifier")
+
 
