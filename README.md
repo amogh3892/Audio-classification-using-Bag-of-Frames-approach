@@ -64,7 +64,7 @@ D.	Classification
     
 The test phase includes similar steps where features extracted from the audio clips are normalized and vector quantized using the codebook, followed by obtaining the Bag of Frames for each audio clip.  The normalized Bag of Frames are then given as input to the classifier to obtain the final output.
 
-##Results
+## Results
 
 To Evaluate the approach, ESC-10 dataset available at https://github.com/karoldvl/ESC-10 was used.
 
